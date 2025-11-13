@@ -72,10 +72,14 @@ result = model.fit(data)
 forecast = model.forecast(h=10)
 ```
 
-### Run Demo
+### Run Demos
 
 ```bash
-python demo.py
+# Basic demo
+python demos/demo.py
+
+# Comprehensive benchmark
+python demos/benchmark_demo.py
 ```
 
 ## Benchmarking
