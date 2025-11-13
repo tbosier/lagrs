@@ -1,0 +1,20 @@
+[package]
+name = "lagrs-python"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+
+[lib]
+name = "lagrs"
+crate-type = ["cdylib"]
+
+[dependencies]
+lagrs-core = { path = "../lagrs-core" }
+pyo3 = { version = "0.22", features = ["auto-initialize", "extension-module"] }
+numpy = "0.22"
+
+[build-system]
+requires = ["maturin>=1.0,<2.0"]
+build-backend = "maturin"
+

@@ -1,0 +1,30 @@
+# Rust
+target/
+# Note: Cargo.lock should be committed for applications/workspaces
+# Uncomment the line below if you want to ignore it (not recommended for workspaces)
+# Cargo.lock
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+.venv/
+

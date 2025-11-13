@@ -1,0 +1,17 @@
+[package]
+name = "lagrs-bench"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+
+[[bin]]
+name = "lagrs-bench"
+path = "src/main.rs"
+
+[dependencies]
+lagrs-core = { path = "../lagrs-core" }
+lagrs-python = { path = "../lagrs-python" }
+pyo3 = { version = "0.22", features = ["auto-initialize"] }
+numpy = "0.22"
+
